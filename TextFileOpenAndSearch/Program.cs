@@ -17,7 +17,7 @@ namespace TextFileOpenAndSearch
 
             do
             {
-                Console.WriteLine("Choose a text file:\n a) Frankestein\n b) Text 2\n c) Text 3\n d) Exit \n");
+                Console.WriteLine("Choose a text file:\n a) Frankestein\n b) Metamorphosis\n c) Les Misérables\n d) Exit \n");
                 keyInfo1 = Console.ReadKey();
                 Console.WriteLine();
 
