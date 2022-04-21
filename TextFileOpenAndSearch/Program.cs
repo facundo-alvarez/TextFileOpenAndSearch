@@ -121,6 +121,7 @@ namespace TextFileOpenAndSearch
         {
             IEnumerable<string> wordsQuery = from word in words
                                              where word == query
+                                             orderby word ascending
                                              select word;
             Console.WriteLine("-------------------------------");
             if (wordsQuery.Any())
@@ -138,6 +139,7 @@ namespace TextFileOpenAndSearch
         {
             IEnumerable<string> wordsQuery = from word in words
                                              where word.StartsWith(query)
+                                             orderby word ascending
                                              select word;
             Console.WriteLine("-------------------------------");
             if (wordsQuery.Any())
@@ -155,6 +157,7 @@ namespace TextFileOpenAndSearch
         {
             IEnumerable<string> wordsQuery = from word in words
                                              where word.EndsWith(query)
+                                             orderby word ascending
                                              select word;
             Console.WriteLine("-------------------------------");
             if (wordsQuery.Any())
