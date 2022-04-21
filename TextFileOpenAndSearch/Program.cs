@@ -17,26 +17,26 @@ namespace TextFileOpenAndSearch
 
             do
             {
-                Console.WriteLine("Choose a text file:\n a) Text 1\n b) Text 2\n c) Text 3\n d) Exit \n");
+                Console.WriteLine("Choose a text file:\n a) Frankestein\n b) Text 2\n c) Text 3\n d) Exit \n");
                 keyInfo1 = Console.ReadKey();
                 Console.WriteLine();
 
                 switch (keyInfo1.Key)
                 {
                     case ConsoleKey.A:
-                        desiredText = "text1.txt";
+                        desiredText = "Frankestein.txt";
                         textWords = PrintTextFile(desiredText);
                         desiredKey1 = true;
                         break;
 
                     case ConsoleKey.B:
-                        desiredText = "text2.txt";
+                        desiredText = "Metamorphosis.txt";
                         textWords = PrintTextFile(desiredText);
                         desiredKey1 = true;
                         break;
 
                     case ConsoleKey.C:
-                        desiredText = "text3.txt";
+                        desiredText = "Les Misérables.txt";
                         textWords = PrintTextFile(desiredText);
                         desiredKey1 = true;
                         break;
